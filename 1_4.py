@@ -12,8 +12,8 @@ try:
             else:
                 print('Month', month, 'is Autumn.')
         else:
-            print('There is no month the number of which more 12.')
+            print('There is no month the number of which is ' + str(month))
     else:
         print('There is no negative month.')
 except ValueError:
-    print('You entered the wrong data type.')
+    print('You entered the wrong data type. Please enter a number!')
