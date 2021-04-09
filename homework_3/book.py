@@ -79,14 +79,9 @@ library = [
 ]
 
 
-def Print(self):
-    return str(self.get_book_id()) + "," + self.get_title() + "," + self.get_author() + \
-           "," + self.get_publisher() + "," + str(self.get_year()) + "," + str(self.get_pages()) + \
-           "," + str(self.get_price()) + "," + self.get_type()
-
-
 def getInfo(self):
-    print(str(library[i].get_book_id()) + ") Название книги: " + library[i].get_title() + ", Автор: " + library[i].get_author() + \
+    print(str(library[i].get_book_id()) + ") Название книги: " + library[i].get_title() + ", Автор: " + library[
+        i].get_author() + \
           ", издательство " + library[i].get_publisher() + ", год издания: " + str(library[i].get_year()) + ", " + str(
         library[i].get_pages()) + \
           " стр., цена: " + str(library[i].get_price()) + ", тип издания: " + library[i].get_type() + ".")
@@ -109,4 +104,3 @@ for i in range(len(library)):
     if library[i].get_year() > check_year:
         getInfo(i)
         i += 1
-
